@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff8f3;
+}
+#header{
+    position: fixed;
+    width: 100%;
+    height: 5rem;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    box-shadow: 0px 0px 8px 0px rgb(0, 0, 0);
+    z-index: 10;
+}
+#header input{
+    font-size: 16px;
+    padding: 4px;
+    outline: none;
+    width: 25em;
+    border: 0;
+    border-bottom: 2px solid black;
+}
+#dropdown{
+    position: absolute;
+    width: 25em;
+    border: 1px solid black;
+    background-color: white;
+    height: 25rem;
+    overflow: scroll;
+}
+#dropdown div{
+    display: flex;
+    padding: 4px 6px;
+    justify-content: space-between;
+    align-items: center;
+}
+#dropdown div img{
+    width: 8rem;
+    height: 4rem;
+}
+#header button{
+    font-size: 16px;
+    padding: 4px;
+}
+#container{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 4rem;
+    flex-wrap: wrap;
+    padding: auto;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 17rem;
+    height: 17rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    background-color: white;
+    box-shadow: 0px 0px 8px 0px rgb(87, 87, 87);
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: transform .2s;
+}
+.card img{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    width: 100%;
+    height: 60%;
+}
+.card .details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 15px;
+    height: 40%;
+    cursor: pointer;
+}
+.card .btn1{
+    margin-top: 5px;
+    margin-right: 5px;
+    padding: 6px 10px;
+    color: white;
+    background-image: linear-gradient(to bottom right,#ff9837,#ff7f07 );
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: 40%;
+    
+}
+.card .btn2{
+    margin-top: 5px;
+    margin-right: 5px;
+    padding: 6px 10px;
+    color: white;
+    background-image: linear-gradient(to bottom right,#ff3737,#ff0707 );
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: 60%;
+    
+}
+.blur   {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+}
+
+#expand{
+    width: 80vw;
+    height: 80vh;
+    position: fixed;
+    top: 20;
+    background-color: white;
+    top: 7rem;
+    border-radius: 10px;
+}
+#expand img{
+    width: 25rem;
+    height: 15rem;
+}
+#expand div div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 15px auto;
+    padding: 10px;
+    background-color: rgb(255, 248, 221);
+    width: 80%;
+    font-family: Helvetica;
+    border-radius: 10px;
+}
+
+#closeDetail{
+    position: absolute;
+    top: 10px;
+    left: 95%;
+    z-index: 30;
+    color: red;
+    font-size: 25px;
+    cursor: pointer;
+}
+#cartPage{
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.cardDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    background-color: white;
+    border-radius: 20px;
+}
+.cardDiv img{
+    width: 10rem;
+    height: 5rem;
+}
+.qChange{
+    display: flex;
+    align-items: center;
+    height: 80%;
+
+}
+.qChange p{
+    width: 2rem;
+    border-radius: 50%;
+    padding: 8px 10px;
+    margin-bottom: 5px;
+    background-color: #2ab43c;
+    color: white;
+}
+#total{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 60%;
+    margin-bottom: 10px;
+
+}
+#total h5{
+    float: right;
+    font-size: 20px;
+    margin: 10px 2px;
+}

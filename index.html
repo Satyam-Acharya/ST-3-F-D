@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ST-3 Project</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    
+</head>
+<body>
+    <div id="header">
+        <h2>Brand Logo</h2>
+        <div>
+            <input type="text" id="filter" oninput="filterProducts()" placeholder="Enter Product Name" onkeyup="myFocusFunction()" onfocusout="myBlurFunction()">
+            <div id="dropdown" style="display: none;">
+                
+            </div>
+        </div>
+        <div onclick="openCart()" style="display: flex;align-items: center;margin-right: 2rem;cursor: pointer;">
+            <img src="/imgs/cart.svg">
+            <p>Cart</p>
+        </div>
+    </div>
+    <div id="container">
+        
+        </div><div id="expand" style="display: none;">
+        
+    </div>
+    <div id="cartPage" style="display: none;">
+
+        <h1>Your Shopping Cart</h1>
+        
+    </div>
+
+
+
+    <script src='main.js'></script>
+</body>
+</html>
